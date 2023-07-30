@@ -1,4 +1,4 @@
-#include "CardForm.h"
+#include "cardForm.h"
 
 #include <QtWidgets/QLabel>
 #include <QtGui/QShortCut>
