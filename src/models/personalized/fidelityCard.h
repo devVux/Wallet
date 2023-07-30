@@ -17,7 +17,7 @@ class FidelityCard: public PersonalizedCard {
 
 		void notifyAll() override;
 
-		const CardType type() const { return CardType::Fidelity; }
+		CardType type() const { return CardType::Fidelity; }
 
 
 	public:

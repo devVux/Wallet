@@ -26,7 +26,7 @@ class ObservedBy {
         
         virtual ~ObservedBy() = default;   
 
-        ObservedBy(const ObservedBy& other) {
+        ObservedBy(const ObservedBy&) {
             mObservers.clear();
         }
 

@@ -17,7 +17,7 @@ class PaymentCard: public PersonalizedCard {
 
 		void notifyAll() override;
 
-		const CardType type() const { return CardType::Payment; }
+		CardType type() const { return CardType::Payment; }
 
 	public:
 

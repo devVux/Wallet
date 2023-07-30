@@ -24,7 +24,7 @@ class AnonymousCard: public CardInterface {
 
 		void notifyAll() override;
 
-		const CardType type() const { return CardType::Anonymous; }
+		CardType type() const { return CardType::Anonymous; }
 
 
 	public:

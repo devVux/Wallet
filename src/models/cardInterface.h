@@ -24,6 +24,6 @@ class CardInterface: public ObservedBy<Observer<CardInterface>> {
 
 		virtual void accept(CardsVisitorInterface& visitor) = 0;
 
-		virtual const CardType type() const = 0;
+		virtual CardType type() const = 0;
 
 };

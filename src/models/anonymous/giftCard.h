@@ -17,7 +17,7 @@ class GiftCard: public AnonymousCard {
 
 		void notifyAll() override;
 
-		const CardType type() const { return CardType::Gift; }
+		CardType type() const { return CardType::Gift; }
 
 
 	public:

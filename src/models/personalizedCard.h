@@ -23,7 +23,7 @@ class PersonalizedCard: public AnonymousCard {
 
 		void notifyAll() override;
 
-		const CardType type() const { return CardType::Personalized; }
+		CardType type() const { return CardType::Personalized; }
 
 
 	public:
