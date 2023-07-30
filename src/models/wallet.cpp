@@ -42,7 +42,7 @@ void fromJSON(const json& j, Wallet& wallet) {
 
 }
 
-void Wallet::notify(CardInterface& card) {
+void Wallet::notify(CardInterface&) {
 	this->notifyAll();
 }
 

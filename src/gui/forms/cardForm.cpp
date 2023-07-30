@@ -1,7 +1,7 @@
 #include "cardForm.h"
 
 #include <QtWidgets/QLabel>
-#include <QtGui/QShortCut>
+#include <QtGui/QShortcut>
 
 #include "../../utilities/parser.h"
 
