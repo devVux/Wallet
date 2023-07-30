@@ -1,0 +1,12 @@
+
+QPushButton#ArrowButton {
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color: @arrow-button-color;
+}
+
+QPushButton#ArrowButton:pressed {
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color: @arrow-button-color2;
+}

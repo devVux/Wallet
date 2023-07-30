@@ -1,0 +1,23 @@
+
+QLabel#InstructionLabel {
+	color: black;
+	padding: 10;
+}
+
+QPushButton#DeleteButton {
+	border-radius: @border-radius2; 
+	background-color: @delete-button-color; 
+	padding: 15 20 15 20;
+}
+QPushButton#DeleteButton:pressed {
+	background-color: @delete-button-color2;
+}
+
+QPushButton#AddButton {
+	border-radius: @border-radius2;
+	background-color: @add-button-color; 
+	padding: 15 20 15 20;
+}
+QPushButton#AddButton:pressed {
+	background-color: @add-button-color2; 
+}

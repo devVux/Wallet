@@ -1,0 +1,11 @@
+
+
+QPushButton#RoundButton {
+	border-radius: 8px;
+	background-color: #E54B4B;
+	color: white;
+}
+
+QPushButton#RoundButton:pressed {
+	background-color: #D81111;
+}

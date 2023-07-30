@@ -1,0 +1,78 @@
+
+
+QWidget#Anonymous {
+	background-color: @anonymous-color;
+	border-radius: 24px;
+	border: 1px solid black;
+}
+
+QWidget#Personalized {
+	background-color: @personalized-color;
+	border-radius: 24px;
+	border: 1px solid black;
+}
+
+QWidget#Credit {
+	background-color: @payment-color-credit;
+	border-radius: 24px;
+	border: 1px solid black;
+}
+
+QWidget#Debit {
+	background-color: @payment-color-debit;
+	border-radius: 24px;
+	border: 1px solid black;
+}
+
+QWidget#Prepaid {
+	background-color: @payment-color-prepaid;
+	border-radius: 24px;
+	border: 1px solid black;
+}
+
+QWidget#Fidelity {
+	background-color: @fidelity-color;
+	border-radius: 24px;
+	border: 1px solid black;
+}
+
+QWidget#Gift {
+	background-color: @gift-color;
+	border-radius: 24px;
+	border: 1px solid black;
+}
+
+QLabel#TitleLabel {
+	font-weight: normal;
+}
+
+QLabel#OwnerLabel {
+	font-weight: normal;
+}
+
+QLabel#CodeLabel {
+	color: black;
+	background-color: white; 
+	padding: 4 0 4 0;
+}
+
+QLabel#NumberLabel {
+	font-weight: normal;
+	font-size: @body-size;
+	color: black;
+	background-color: white; 
+	border-radius: 16px;
+	min-height: 20px;
+	min-width: 20px;
+	max-height: 24px;
+	max-width: 390px;
+	padding: 4 0 4 0;
+}
+
+QLabel#ExpireLabel {
+	font-weight: normal;
+}
+
+QLabel#CvcLabel {
+	font-weight: normal;
+}

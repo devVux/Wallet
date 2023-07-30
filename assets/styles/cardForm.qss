@@ -1,0 +1,32 @@
+
+
+QFrame#CardForm {
+	background-color: @form-color;
+	border: 1px solid black;
+	margin: @margin;
+	border-radius: @border-radius;
+	padding: 20px;
+}
+
+QLineEdit{
+	background-color: transparent;
+	color: white;
+	border: 1px solid transparent;
+	border-bottom-color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+QDateEdit {
+	border: none;
+}
+
+QPushButton#SaveButton {
+	border-radius: @border-radius2;
+	background-color: @save-button-color; 
+	padding: 15 20 15 20;
+}
+
+QPushButton#SaveButton:pressed {
+	background-color: @save-button-color2; 
+}

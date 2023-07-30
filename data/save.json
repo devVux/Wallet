@@ -1,0 +1,29 @@
+[
+    {
+        "cardType": 2,
+        "cvc": "000",
+        "expireDate": 1688248800,
+        "number": "Number",
+        "owner": "Vullnet Vogliz",
+        "paymentType": 2,
+        "title": "Intesa San Paolo"
+    },
+    {
+        "cardType": 2,
+        "cvc": "000",
+        "expireDate": 1690743045,
+        "number": "Number",
+        "owner": "Owner",
+        "paymentType": 1,
+        "title": "Steam"
+    },
+    {
+        "cardType": 2,
+        "cvc": "000",
+        "expireDate": 1690668000,
+        "number": "Number",
+        "owner": "Owner",
+        "paymentType": 0,
+        "title": "Just Eat"
+    }
+]

@@ -1,0 +1,44 @@
+{
+
+  "background-color": "#F7EBE8",
+  "handle-color": "#BABABA",
+
+  "arrow-button-color": "#2A2D34",
+  "arrow-button-color2": "#0A0908",
+
+  "delete-button-color": "#E54B4B",
+  "delete-button-color2": "#BD1313",
+
+  "add-button-color": "#D9D9D9",
+  "add-button-color2": "#8C8C8C",
+
+  "save-button-color": "#82D173",
+  "save-button-color2": "#63A375",
+
+  "form-color": "#0C3737",
+
+
+  "anonymous-color": "#70163C",
+  "personalized-color": "#9F7833",
+  "payment-color-credit": "#071013",
+  "payment-color-debit": "#02182B",
+  "payment-color-prepaid": "#1B2F33",
+  "fidelity-color": "#56667A",
+  "gift-color": "#2176AE",
+
+
+  "border-radius": "11px",
+  "border-radius2": "8px",
+
+  "zero": "0",
+  "margin": "10px",
+
+  "padding": "8px",
+  "padding2": "25px",
+
+  "icon-size": "13px",
+
+  "caption-size": "16px",
+  "heading-size": "24px",
+  "body-size": "18px"
+}

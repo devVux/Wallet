@@ -1,0 +1,23 @@
+
+QMainWindow {
+    background-color: @background-color;
+    padding: @padding;
+}
+
+QLabel {
+    color: white;
+    font-family: Bauhaus;
+    font-size: @caption-size;
+    font-weight: bold;
+}
+
+QPushButton {
+    color: white;
+    font-family: Bauhaus;
+    font-size: @caption-size;
+    font-weight: bold;
+}
+
+QSplitter::handle {
+    background-color: @handle-color;
+}
