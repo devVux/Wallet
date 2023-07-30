@@ -5,14 +5,14 @@
 
 #include "../../utilities/parser.h"
 
-CardForm::CardForm(QWidget* parent) {
+CardForm::CardForm(QWidget* parent): QFrame(parent) {
 	this->setObjectName("CardForm");
 	this->loadUI();
 }
 
 void CardForm::loadUI() {
 
-	this->setStyleSheet(QssParser::instance().loadStyle("CardForm.qss"));
+	this->setStyleSheet(QssParser::instance().loadStyle("cardForm.qss"));
 	
 	formLayout->setSpacing(40);
 

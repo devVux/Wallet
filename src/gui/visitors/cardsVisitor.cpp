@@ -61,7 +61,6 @@ void CardsVisitor::visit(PaymentCard& card) {
 
 	// front card
 	auto front = new QWidget(pWidget);
-	qDebug() << static_cast<int>(card.paymentType());
 	front->setObjectName(QString::fromStdString(PaymentTypeMap.at(card.paymentType())));
 	front->setStyleSheet(QssParser::instance().loadStyle("card.qss"));
 	front->setMinimumSize(300 * k, 160 * k);
