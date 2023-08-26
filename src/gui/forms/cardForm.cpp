@@ -20,7 +20,7 @@ void CardForm::loadUI() {
 	QObject::connect(pSaveButton, &QPushButton::clicked, this, [this]() {
 		emit saveClicked();
 	});
-	QObject::connect(new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_S), this), &QShortcut::activated, this, [this]() {
+	QObject::connect(new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_S), this), &QShortcut::activated, this, [this]() {
 		emit saveClicked();
 	});
 	

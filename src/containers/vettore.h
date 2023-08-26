@@ -142,9 +142,9 @@ class Vettore {
 
     private:
         
-        unsigned int mSize;
-        
         unsigned int mCapacity;
+        
+        unsigned int mSize;
 
         T* v;
 

@@ -58,7 +58,7 @@ class CardFactory {
 
         }
 
-		static CardInterface* promoteTo(const CardInterface* from, const CardType& to) {
+		static CardInterface* promoteTo(const CardInterface* /*from*/, const CardType& to) {
 			return createCard(from->toJSON(), to);
 		}
 
