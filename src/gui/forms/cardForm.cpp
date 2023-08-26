@@ -24,7 +24,7 @@ void CardForm::loadUI() {
 		emit saveClicked();
 	});
 	
-	auto hLayout = new QHBoxLayout;
+	auto hLayout = new QHBoxLayout(this);
 	hLayout->addWidget(pSaveButton);
 
 	vLayout->addLayout(formLayout);

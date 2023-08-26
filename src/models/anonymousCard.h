@@ -31,12 +31,7 @@ class AnonymousCard: public CardInterface {
 
 		string title() const { return mTitle; }
 		void setTitle(const string& title);
-
-		// AnonymousCard& operator=(const AnonymousCard& other);
-
-		bool operator==(const AnonymousCard& other) { return mTitle == other.mTitle; }
-		bool operator!=(const AnonymousCard& other) { return !(*this == other); }
-
+		
 
 	private:
 		

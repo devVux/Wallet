@@ -78,8 +78,8 @@ void FormsVisitor::visit(PaymentCard& card) {
 	typeBox->addItem(QString::fromStdString("Prepaid"));
 
 	typeBox->setCurrentIndex(static_cast<int>(card.paymentType()));
-	QObject::connect(typeBox, &QComboBox::currentIndexChanged, typeBox, [this, &card, typeBox](int index) {
-		card.setPaymentType(static_cast<PaymentType>(index));
+	QObject::connect(pForm, &CardForm::saveClicked, pForm, [this, &card, typeBox]() {
+		card.setPaymentType(static_cast<PaymentType>(typeBox->currentIndex()));
 	});
 
 	pForm->addRow(numberLabel, numberInput);

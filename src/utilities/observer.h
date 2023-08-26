@@ -1,8 +1,7 @@
 #pragma once
 
-#include <vector>
+#include "../containers/vettore.h"
 
-using std::vector;
 
 template <class T>
 class Observer {
@@ -55,6 +54,6 @@ class ObservedBy {
 
     protected:
 
-        vector<T*> mObservers;
+        Vettore<T*> mObservers;
 
 };

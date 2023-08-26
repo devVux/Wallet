@@ -25,9 +25,6 @@ class CardForm: public QFrame {
 	signals:
 
 		void saveClicked();
-		void updateCard();
-
-
 
 	private:
 

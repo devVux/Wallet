@@ -3,6 +3,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMessageBox>
+#include <QtGui/QShortcut>
 
 #include <fstream>
 
@@ -45,9 +46,8 @@ void MainFrame::loadUI() {
 		mWallet.promoteTo(to);
 	});	
 
-
 	pSplitter->addWidget(pContentFrame);
-	pSplitter->addWidget(buildInstructionLabel());
+	pSplitter->addWidget(new CardForm(this));
 	
 	int contentSize = (2.0 / 3) * WIDTH;
 	int formSize = WIDTH - contentSize;
@@ -67,6 +67,9 @@ void MainFrame::saveWallet() {
 
 	file << j.dump(4);
 	file.close();
+
+	mAlreadySaved = true;
+
 }
 
 void MainFrame::loadWallet() {
@@ -97,7 +100,13 @@ void MainFrame::notify(Wallet&) {
 
 	if (mWallet.isEmpty()) {
 
-		QWidget* old = pSplitter->replaceWidget(1, buildInstructionLabel());
+		auto form = new CardForm(this);
+		QObject::connect(form, &CardForm::saveClicked, this, [this]() {
+			this->saveWallet();
+		});
+
+		// We replace the form and delete the empty card form
+		QWidget* old = pSplitter->replaceWidget(1, form);
 		old->deleteLater();
 
 	} else {
@@ -117,12 +126,7 @@ void MainFrame::notify(Wallet&) {
 		form->setVisible(true);
 		
 	}
-}
 
-QWidget* MainFrame::buildInstructionLabel() const {
-	auto label = new QLabel("Wallet is empty! Start by adding some cards!");
-	label->setWordWrap(true);
-	label->setObjectName("InstructionLabel");
-	label->setAlignment(Qt::AlignCenter);
-	return label;
+	mAlreadySaved = false;
+
 }

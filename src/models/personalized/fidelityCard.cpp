@@ -9,7 +9,7 @@ json FidelityCard::toJSON() const {
 	json j = PersonalizedCard::toJSON();
 	j["company"] = mCompany;
 	j["code"] = mCode;
-	j["type"] = CardType::Fidelity;
+	j["cardType"] = CardType::Fidelity;
 	return j;
 }
 

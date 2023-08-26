@@ -33,13 +33,7 @@ class PersonalizedCard: public AnonymousCard {
 
 		std::tm& expireDate() const { return *std::localtime(&mExpireDate); }
 		void setExpireDate(time_t expireDate);
-
-
-	public:
-
-		bool operator==(const PersonalizedCard& other);
-		bool operator!=(const PersonalizedCard& other) { return !(*this == other); }
-
+		
 
 	private:
 

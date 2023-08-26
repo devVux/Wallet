@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required(VERSION 3.1.3)
 
-project("Carte")
+project("Wallet")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -19,11 +19,11 @@ find_package(Qt6 COMPONENTS Core Widgets REQUIRED)
 
 set(HEADERS
 
-    "src/utilities/parser.h"
+    "src/containers/vettore.h"
 
+    "src/utilities/parser.h"
     "src/utilities/cardFactory.h"
     "src/utilities/observer.h"
-    "src/utilities/memento.h"
 
     "src/models/abstractCard.h"
     "src/models/personalizedCard.h"

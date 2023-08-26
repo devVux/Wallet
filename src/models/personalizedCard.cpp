@@ -33,11 +33,6 @@ void PersonalizedCard::notifyAll() {
 		observer->notify(*this);
 }
 
-bool PersonalizedCard::operator==(const PersonalizedCard& other) {
-	return AnonymousCard::operator==(other) && mOwner == other.mOwner &&
-			mExpireDate == other.mExpireDate;
-}
-
 void PersonalizedCard::setOwner(const string& owner) {
 	if (!owner.empty() && mOwner != owner) {
 		mOwner = owner;

@@ -22,14 +22,13 @@ class MainFrame: public QFrame, public Observer<Wallet> {
 
 		void saveWallet();
 
+		bool alreadySaved() const { return mAlreadySaved; }
 
 	private:
 
 		void loadUI();
 
 		void loadWallet();
-
-		QWidget* buildInstructionLabel() const;
 
 
 	private:
@@ -42,6 +41,8 @@ class MainFrame: public QFrame, public Observer<Wallet> {
 		CardsVisitor mCardsVisitor;
 
 		Wallet mWallet;
+
+		bool mAlreadySaved { true };
 
 };
 

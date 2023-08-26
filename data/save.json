@@ -1,29 +1,25 @@
 [
     {
+        "cardType": 3,
+        "code": "QEWRR-XCVDQ-DFVXF-JHYRT",
+        "company": "Microsoft",
+        "expireDate": 1724623200,
+        "owner": "Vullnet Vogli",
+        "title": "Xbox"
+    },
+    {
         "cardType": 2,
-        "cvc": "000",
-        "expireDate": 1688248800,
-        "number": "Number",
-        "owner": "Vullnet Vogliz",
-        "paymentType": 2,
+        "cvc": "111",
+        "expireDate": 1753480800,
+        "number": "1234123412341234",
+        "owner": "Vullnet VOgli",
+        "paymentType": 1,
         "title": "Intesa San Paolo"
     },
     {
-        "cardType": 2,
-        "cvc": "000",
-        "expireDate": 1690743045,
-        "number": "Number",
-        "owner": "Owner",
-        "paymentType": 1,
-        "title": "Steam"
-    },
-    {
-        "cardType": 2,
-        "cvc": "000",
-        "expireDate": 1690668000,
-        "number": "Number",
-        "owner": "Owner",
-        "paymentType": 0,
-        "title": "Just Eat"
+        "cardType": 4,
+        "code": "ASDF-EFRW-BCVH-IKLH",
+        "title": "Steam",
+        "value": 50
     }
 ]

@@ -19,7 +19,7 @@ ContentFrame::ContentFrame(QWidget* parent): QFrame(parent) {
 void ContentFrame::notify(Wallet& wallet) {
 
 	if (wallet.isEmpty()) {
-		pCountLabel->setText("Empty!");
+		pCountLabel->setText("Wallet is empty! Start by adding some cards!");
 
 		float k = 1.3;
 		auto emptyCard = new QLabel(this);

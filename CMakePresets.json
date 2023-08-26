@@ -17,10 +17,7 @@
           "rhs": "Windows"
         },
         "environment": {
-          "CFLAGS": "/fsanitize=address",
-          "CXXFLAGS": "/fsanitize=address"
         }
-
       },
         {
             "name": "x64-debug",

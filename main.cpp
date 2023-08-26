@@ -1,8 +1,8 @@
 
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QMainWindow>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QMessageBox>
-#include <QtWidgets/QMainWindow>
 
 #include <iostream>
 #include <fstream>
@@ -33,11 +33,12 @@ int main(int argc, char* argv[]) {
 
     loadStyleSheetProperties();
     QApplication app(argc, argv);
+    app.setWindowIcon(QIcon(QString::fromStdString(ICONS_PATH + string("wallet.png"))));
 
     QMainWindow q;
     q.setStyleSheet(QssParser::instance().loadStyle("mainWindow.qss"));
     q.resize(WIDTH, HEIGHT);
-    
+
     q.setCentralWidget(new MainFrame);
     q.show();
 

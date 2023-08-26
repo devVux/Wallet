@@ -1,9 +1,4 @@
 
-QLabel#InstructionLabel {
-	color: black;
-	padding: 10;
-}
-
 QPushButton#DeleteButton {
 	border-radius: @border-radius2; 
 	background-color: @delete-button-color; 
