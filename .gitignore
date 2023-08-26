@@ -79,3 +79,6 @@ out/build/x64-debug/Carte_autogen/MXUWEOXILK/moc_contentFrame.cpp
 out/build/x64-debug/Carte_autogen/MXUWEOXILK/moc_contentFrame.cpp.d
 out/build/x64-debug/src/gui/moc_mainFrame.cpp
 out/build/x64-debug/src/gui/moc_mainFrame.cpp_parameters
+/.vs
+/.vscode
+/out/build
