@@ -41,7 +41,7 @@ void MainFrame::loadUI() {
 	QObject::connect(pContentFrame, &ContentFrame::deleteClicked, pContentFrame, [this]() {
 		mWallet.removeCardAt(mWallet.index());
 	});
-	QObject::connect(pContentFrame, &ContentFrame::promoteTo, pContentFrame, [this](CardInterface* from, CardInterface* to) {
+	QObject::connect(pContentFrame, &ContentFrame::promoteTo, pContentFrame, [this](CardInterface* /*from*/, CardInterface* to) {
 		if (mWallet.isEmpty()) return;
 		mWallet.promoteTo(to);
 	});	
